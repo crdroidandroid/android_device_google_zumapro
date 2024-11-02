@@ -1,0 +1,7 @@
+[
+  {
+    "repository": "crdroidandroid/proprietary_vendor_google_camera",
+    "target_path": "vendor/google/camera",
+    "remote": "crdroid-gitlab"
+  }
+]
