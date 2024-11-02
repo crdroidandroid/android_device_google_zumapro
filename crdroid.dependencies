@@ -6,5 +6,10 @@
   {
     "repository": "crdroidandroid/android_packages_apps_PixelParts",
     "target_path": "packages/apps/PixelParts"
+  },
+  {
+    "repository": "crdroidandroid/proprietary_vendor_google_camera",
+    "target_path": "vendor/google/camera",
+    "remote": "crdroid-gitlab"
   }
 ]
