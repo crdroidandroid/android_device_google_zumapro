@@ -430,6 +430,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     GoogleParts
 
+# Pixel Parts
+$(call inherit-product-if-exists, packages/apps/PixelParts/device.mk)
+
 # Properties
 TARGET_PRODUCT_PROP += device/google/zumapro/product.prop
 TARGET_SYSTEM_EXT_PROP += device/google/zumapro/system_ext.prop

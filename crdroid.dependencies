@@ -2,5 +2,9 @@
   {
     "repository": "crdroidandroid/android_device_google_gs-common",
     "target_path": "device/google/gs-common"
+  },
+  {
+    "repository": "crdroidandroid/android_packages_apps_PixelParts",
+    "target_path": "packages/apps/PixelParts"
   }
 ]
