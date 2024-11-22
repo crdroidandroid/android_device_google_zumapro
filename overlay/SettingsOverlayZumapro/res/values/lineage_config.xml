@@ -9,4 +9,7 @@
 
     <!-- Whether Settings should open a separate camera preview during face enrollment -->
     <bool name="config_face_enroll_hal_owns_camera">true</bool>
+
+    <!-- Show Now Playing -->
+    <bool name="config_show_now_playing">true</bool>
 </resources>
