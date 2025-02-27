@@ -366,6 +366,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.location.gps.prebuilt.xml
 
+# Kernel
+PRODUCT_ENABLE_UFFD_GC := true
+
 # Lineage Health
 include hardware/google/pixel/lineage_health/device.mk
 
