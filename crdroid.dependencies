@@ -9,7 +9,7 @@
   },
   {
     "repository": "crdroidandroid/proprietary_vendor_JamesDSP",
-    "target_path": "vendor/JamesDSP",
+    "target_path": "vendor/JamesDSP"
   },
   {
     "repository": "crdroidandroid/proprietary_vendor_google_camera",
