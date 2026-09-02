@@ -175,4 +175,10 @@
          firmware then cannot attach to LTE/NR on that slot (secondary SIM / roaming eSIM
          ends up "Emergency calls only"). Pairs with persist.vendor.radio.dual.volte=1. -->
     <bool name="config_dsds_allow_data_all_slots">true</bool>
+
+    <!-- Keep 5G SA (N1 mode) allowed regardless of the carrier config. CarrierConfig
+         forces NSA+SA for every carrier anyway; deciding N1 mode from the first config that
+         loads makes the first boot after a factory reset register on SA like every later boot,
+         instead of staying on LTE until the next registration. -->
+    <bool name="config_force_nr_sa_allowed">true</bool>
 </resources>
