@@ -166,6 +166,7 @@ suspend.short_suspend_threshold_millis=5000
 debug.bugle.enable_emergency_satellite_messaging=true
 persist.vendor.modem.extensive_logging_enabled=false
 persist.vendor.radio.config.carrier_config_dir=/vendor/firmware/carrierconfig
+persist.vendor.radio.dual.volte=1
 persist.vendor.radio.multisim_switch_support=true
 persist.vendor.ril.crash_handling_mode=2
 persist.vendor.ril.db_ecc.id.type=5

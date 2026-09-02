@@ -170,4 +170,9 @@
 
     <!-- Whether to wait for carrier config loaded before using operator name to publish from modem. -->
     <bool name="config_update_operator_name_after_carrier_config_loaded">true</bool>
+    <!-- Keep PS attach allowed on both SIM slots. The Shannon RIL otherwise disables PS
+         service on the slot that is not the preferred data modem and the 2025-09+ modem
+         firmware then cannot attach to LTE/NR on that slot (secondary SIM / roaming eSIM
+         ends up "Emergency calls only"). Pairs with persist.vendor.radio.dual.volte=1. -->
+    <bool name="config_dsds_allow_data_all_slots">true</bool>
 </resources>
