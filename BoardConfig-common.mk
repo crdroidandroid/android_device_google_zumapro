@@ -14,9 +14,12 @@ include device/google/zumapro/BoardConfig-16k-common.mk
 endif
 
 TARGET_ARCH := arm64
-TARGET_ARCH_VARIANT := armv8-2a
+# caiman/komodo/tokay are all Tensor G4 (1x Cortex-X4 + 3x A720 + 4x A520,
+# uniform ARMv9.2 + SVE2). Raise ISA baseline off armv8.2 and tune scheduling for the OoO
+# mid core (a720) so SVE2 stays available where the vectorizer finds it profitable.
+TARGET_ARCH_VARIANT := armv9-2a
 TARGET_CPU_ABI := arm64-v8a
-TARGET_CPU_VARIANT := cortex-a55
+TARGET_CPU_VARIANT := cortex-a720
 
 BOARD_BOOTCONFIG += \
     androidboot.boot_devices=13200000.ufs
